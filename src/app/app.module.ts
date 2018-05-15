@@ -9,13 +9,15 @@ import { HomePage } from '../pages/home/home';
 import { ListingPage } from '../pages/listing/listing';
 import { FoodProvider } from '../providers/food/food';
 import { FoodDetailPage } from '../pages/food-detail/food-detail';
+import { CartPage } from '../pages/cart/cart';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListingPage,
-    FoodDetailPage
+    FoodDetailPage,
+    CartPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { FoodDetailPage } from '../pages/food-detail/food-detail';
     MyApp,
     HomePage,
     ListingPage,
-    FoodDetailPage
+    FoodDetailPage,
+    CartPage
   ],
   providers: [
     StatusBar,

@@ -30,16 +30,16 @@
       
       <ion-row>
         <ion-col>
-          <button ion-button icon-left color="secondary" (click)="detail(item)">
+          <button ion-button icon-left secondary color="secondary" block (click)="detail(item)">
             <ion-icon name="add"></ion-icon>
             Detalhes
           </button>
         </ion-col>
 
         <ion-col>
-          <button ion-button icon-left>
+          <button ion-button icon-left block (click)="cart(item)">
             <ion-icon name="cart"></ion-icon>
-            Adicionar
+            Pagar
           </button>
         </ion-col>
       </ion-row>

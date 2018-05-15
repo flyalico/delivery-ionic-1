@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { FoodProvider } from '../../providers/food/food';
 import { FoodDetailPage } from '../food-detail/food-detail';
+import { CartPage } from '../cart/cart';
 
 /**
  * Generated class for the ListingPage page.
@@ -30,6 +31,10 @@ export class ListingPage {
 
   detail(item) {
     this.modalCtrl.create(FoodDetailPage, {item: item}).present();
+  }
+
+  cart(item) {
+    this.navCtrl.push(CartPage, {item: item});
   }
 
 }

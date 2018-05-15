@@ -1,0 +1,69 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Carrinho</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-4>
+      <img [src]="item.image" alt="">
+    </ion-col>
+    <ion-col col-4 style="margin-top: -13px;">
+      <p style="font-size: 19px;">{{item.name}}</p>
+      <p style="font-size: 19px;">{{item.price | currency:'BRL'}}</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-range snaps="true" min="1" max="10" step="1" [(ngModel)]="amount">
+          <ion-label range-left>1</ion-label>
+          <ion-label range-right>10</ion-label>
+        </ion-range>
+      </ion-item>
+      <h5 ion-text text-center>Quantidade: {{amount}}</h5>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Endereço</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label floating>CEP</ion-label>
+          <ion-input type="text" ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label floating>Telefone</ion-label>
+          <ion-input type="tel" ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  
+  </ion-list>    
+
+  <button ion-button block outline (click)="checkout()">Finalizar Compra</button>
+</ion-content>
