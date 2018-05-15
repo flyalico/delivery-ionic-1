@@ -10,6 +10,7 @@ import { ListingPage } from '../pages/listing/listing';
 import { FoodProvider } from '../providers/food/food';
 import { FoodDetailPage } from '../pages/food-detail/food-detail';
 import { CartPage } from '../pages/cart/cart';
+import { NewFoodPage } from '../pages/new-food/new-food';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CartPage } from '../pages/cart/cart';
     HomePage,
     ListingPage,
     FoodDetailPage,
-    CartPage
+    CartPage,
+    NewFoodPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { CartPage } from '../pages/cart/cart';
     HomePage,
     ListingPage,
     FoodDetailPage,
-    CartPage
+    CartPage,
+    NewFoodPage
   ],
   providers: [
     StatusBar,
