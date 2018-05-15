@@ -26,19 +26,19 @@ export class FoodProvider {
   private getList() {
     return [
       {
-        image: 'https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png',
+        image: 'https://www.cicis.com/media/1149/pizza_trad_cheese.png',
         name: 'Pizza Grande',
         price: 25.0,
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae a nam voluptatum, enim facere odio illo cupiditate inventore deserunt'
       },
       {
-        image: 'https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png',
+        image: 'https://www.cicis.com/media/1149/pizza_trad_cheese.png',
         name: 'Pizza Média',
         price: 20.0,
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae a nam voluptatum, enim facere odio illo cupiditate inventore deserunt'
       },
       {
-        image: 'https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png',
+        image: 'https://www.cicis.com/media/1149/pizza_trad_cheese.png',
         name: 'Pizza Pequena',
         price: 15.0,
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae a nam voluptatum, enim facere odio illo cupiditate inventore deserunt'
