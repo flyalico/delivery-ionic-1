@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
-import { CartPage } from '../cart/cart';
 
 /**
  * Generated class for the FoodDetailPage page.
@@ -35,7 +34,7 @@ export class FoodDetailPage {
       this.dismiss();
     }, 1000);
     
-    this.navCtrl.push(CartPage, {item: item});
+    this.navCtrl.push('CartPage', {item: item});
   }
 
 }

@@ -8,7 +8,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  defaultHistory: ['ListingPage']
+})
 @Component({
   selector: 'page-new-food',
   templateUrl: 'new-food.html',

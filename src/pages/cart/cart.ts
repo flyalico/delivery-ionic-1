@@ -8,7 +8,9 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  defaultHistory: ['ListingPage']
+})
 @Component({
   selector: 'page-cart',
   templateUrl: 'cart.html',
